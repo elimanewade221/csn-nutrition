@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSN Nutrition — Nutrition Sportive Haut de Gamme au Sénégal</title>
+  <meta name="description" content="Chris Sport Nutrition — Produits de nutrition sportive 100% authentiques livrés à Dakar et au Sénégal. Whey, créatine, pré-workout, BCAA. Commandez sur WhatsApp." />
+  <meta name="theme-color" content="#CC0000" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23CC0000'/><text y='.9em' font-size='70' x='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black' fill='white'>C</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark">CSN</div>
+        <div class="logo-text">
+          <span class="logo-name">Chris Sport</span>
+          <span class="logo-sub">Nutrition</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Accueil</a></li>
+          <li class="nav-dropdown">
+            <a href="shop.html" class="nav-link">
+              Catégories
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </a>
+            <div class="dropdown-mega">
+              <div class="dropdown-col">
+                <h4>Protéines</h4>
+                <a href="shop.html?cat=proteines">Whey Protein</a>
+                <a href="shop.html?cat=proteines">Caséine</a>
+                <a href="shop.html?cat=proteines">Isolate</a>
+                <a href="shop.html?cat=proteines">Protéine Vegan</a>
+              </div>
+              <div class="dropdown-col">
+                <h4>Performance</h4>
+                <a href="shop.html?cat=preworkout">Pré-workout</a>
+                <a href="shop.html?cat=creatine">Créatine</a>
+                <a href="shop.html?cat=bcaa">BCAA / EAA</a>
+                <a href="shop.html?cat=massgainer">Mass Gainer</a>
+              </div>
+              <div class="dropdown-col">
+                <h4>Bien-être</h4>
+                <a href="shop.html?cat=bruleurs">Brûleurs de graisse</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#marques" class="nav-link">Marques</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="action-btn" id="searchToggle" aria-label="Rechercher">
+          <svg width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <a href="https://wa.me/221777600619" class="action-btn" aria-label="Commander sur WhatsApp" target="_blank">
+          <svg width="19" height="19" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="text" placeholder="Rechercher un produit, une marque…" id="searchInput" />
+        <button class="search-close" id="searchClose">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-left" data-animate="fade-right">
+        <div class="hero-eyebrow">
+          <div class="eyebrow-line"></div>
+          <span class="eyebrow-text">Nutrition Sportive Premium</span>
+        </div>
+        <h1 class="hero-title">
+          Atteins tes objectifs<br/><span class="accent">Plus vite.</span>
+        </h1>
+        <p class="hero-desc">Des produits haut de gamme sélectionnés par des experts, livrés directement chez vous au Sénégal. Qualité certifiée, résultats garantis.</p>
+        <div class="hero-ctas">
+          <a href="shop.html" class="btn btn-primary">
+            Voir la boutique
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#categories" class="btn btn-outline">Catégories</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item" data-animate="fade-up">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <h3>Livraison Express</h3>
+            <p>Dakar et banlieue en 24h</p>
+          </div>
+        </div>
+        <div class="feature-item" data-animate="fade-up" data-delay="80">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div>
+            <h3>100% Authentique</h3>
+            <p>Produits certifiés et testés</p>
+          </div>
+        </div>
+        <div class="feature-item" data-animate="fade-up" data-delay="160">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <div>
+            <h3>Paiement Sécurisé</h3>
+            <p>Wave, Orange Money, espèces</p>
+          </div>
+        </div>
+        <div class="feature-item" data-animate="fade-up" data-delay="240">
+          <div class="feature-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <h3>Conseil 7j/7</h3>
+            <p>Experts nutrition disponibles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories section" id="categories">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Explorer</span>
+        <h2 class="section-title">Nos <span>Catégories</span></h2>
+        <p class="section-desc">Tout ce dont vous avez besoin pour atteindre vos objectifs sportifs</p>
+      </div>
+      <div class="cat-grid">
+        <a href="shop.html?cat=proteines" class="cat-card" data-animate="fade-up">
+          <span class="cat-emoji">💪</span>
+          <h3>Protéines</h3>
+          <p>Whey, Isolate, Caséine</p>
+        </a>
+        <a href="shop.html?cat=preworkout" class="cat-card" data-animate="fade-up" data-delay="60">
+          <span class="cat-emoji">⚡</span>
+          <h3>Pré-workout</h3>
+          <p>Énergie & Focus</p>
+        </a>
+        <a href="shop.html?cat=creatine" class="cat-card" data-animate="fade-up" data-delay="120">
+          <span class="cat-emoji">🔬</span>
+          <h3>Créatine</h3>
+          <p>Force & Performance</p>
+        </a>
+        <a href="shop.html?cat=bcaa" class="cat-card" data-animate="fade-up" data-delay="180">
+          <span class="cat-emoji">🧬</span>
+          <h3>BCAA / EAA</h3>
+          <p>Acides Aminés</p>
+        </a>
+        <a href="shop.html?cat=massgainer" class="cat-card" data-animate="fade-up" data-delay="240">
+          <span class="cat-emoji">🏋️</span>
+          <h3>Mass Gainer</h3>
+          <p>Prise de Masse</p>
+        </a>
+        <a href="shop.html?cat=bruleurs" class="cat-card" data-animate="fade-up" data-delay="300">
+          <span class="cat-emoji">🔥</span>
+          <h3>Brûleurs</h3>
+          <p>Perte de Graisse</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands" id="marques">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Partenaires</span>
+        <h2 class="section-title">Nos <span>Marques</span></h2>
+        <p class="section-desc">Les meilleures marques de nutrition sportive disponibles chez CSN</p>
+      </div>
+    </div>
+    <div class="brands-wrap" data-animate="fade-up">
+      <div class="brands-track">
+        <div class="brand-item">Optimum Nutrition</div>
+        <div class="brand-item">MuscleTech</div>
+        <div class="brand-item">Cellucor</div>
+        <div class="brand-item">Scitec Nutrition</div>
+        <div class="brand-item">BSN</div>
+        <div class="brand-item">Dymatize</div>
+        <div class="brand-item">MyProtein</div>
+        <div class="brand-item">BPI Sports</div>
+        <div class="brand-item">Ronnie Coleman</div>
+        <div class="brand-item">Optimum Nutrition</div>
+        <div class="brand-item">MuscleTech</div>
+        <div class="brand-item">Cellucor</div>
+        <div class="brand-item">Scitec Nutrition</div>
+        <div class="brand-item">BSN</div>
+        <div class="brand-item">Dymatize</div>
+        <div class="brand-item">MyProtein</div>
+        <div class="brand-item">BPI Sports</div>
+        <div class="brand-item">Ronnie Coleman</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <div class="logo-mark">CSN</div>
+            <div class="logo-text">
+              <span class="logo-name" style="color:#fff">Chris Sport</span>
+              <span class="logo-sub">Nutrition</span>
+            </div>
+          </a>
+          <p>Votre partenaire nutrition sportive de confiance au Sénégal. Produits authentiques, livraison rapide, expertise garantie.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/221777600619" class="social-btn" aria-label="WhatsApp" target="_blank">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="shop.html">Boutique</a></li>
+            <li><a href="#marques">Marques</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Catégories</h4>
+          <ul>
+            <li><a href="shop.html?cat=proteines">Protéines Whey</a></li>
+            <li><a href="shop.html?cat=preworkout">Pré-workout</a></li>
+            <li><a href="shop.html?cat=creatine">Créatine</a></li>
+            <li><a href="shop.html?cat=bcaa">BCAA / EAA</a></li>
+            <li><a href="shop.html?cat=massgainer">Mass Gainer</a></li>
+            <li><a href="shop.html?cat=bruleurs">Brûleurs de graisse</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 13.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2.84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            +221 77 760 06 19
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Christdiouf36@gmail.com
+          </div>
+          <div class="contact-item">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Parcelles Assainies Unité 7, Dakar
+          </div>
+          <a href="https://wa.me/221777600619" class="wa-btn" target="_blank">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Discuter sur WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Chris Sport Nutrition. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/221777600619" class="wa-float" target="_blank" aria-label="WhatsApp">
+    <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
